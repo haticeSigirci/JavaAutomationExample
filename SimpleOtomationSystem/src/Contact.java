@@ -1,26 +1,25 @@
 import java.util.Scanner;
 
-
-public class Contact implements ActivitiesOfContacts{
+public class Contact implements ActivitiesOfContacts {
 
 	private String address, name;
-	
+
 	PhoneNumber phoneNumber;
-	
+
 	Scanner input = new Scanner(System.in);
-	
-	public Contact(){
-			
-			System.out.println("Enter name: ");
-			name = input.nextLine();
-			
-			System.out.print("Enter address: ");
-			setAddress(input.nextLine());
-			
-			phoneNumber = new PhoneNumber();
-	
+
+	public Contact() {
+
+		System.out.println("Enter name: ");
+		name = input.nextLine();
+
+		System.out.print("Enter address: ");
+		setAddress(input.nextLine());
+
+		phoneNumber = new PhoneNumber();
+
 	}
-	
+
 	public String getName() {
 		return name;
 	}
@@ -39,13 +38,12 @@ public class Contact implements ActivitiesOfContacts{
 
 	@Override
 	public void setActivity() {
-		
+
 	}
 
 	@Override
 	public void displayActivity() {
-		
-				
+
 	}
 
 }
